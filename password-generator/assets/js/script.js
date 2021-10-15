@@ -19,6 +19,23 @@ function generatePassword() {
       }
 
   //Prompt to ask if password should include lowercase letters
+
+  let promptLowercase = window.prompt("Should password include lowercase characters? Type 'Y' for yes or 'N' for no.");
+
+  if (promptLowercase === "" || promptLowercase === null) {
+    window.alert("Please type 'Y' or 'N' to make your selection.");
+    return //whatever this function gets named
+  }
+    else if (promptLowercase === 'y' || promptLowercase === 'Y') {
+      //move on to uppercase prompt, allow lowercase letters;
+    }
+      else if (promptLowercase === 'n' || promptLowercase === 'N') {
+        //move on to uppercase prompt, disallow lowercase letters;
+      }
+        else {
+          window.alert("Please type 'Y' or 'N' to make your selection.");
+          return //whatever this function gets named
+        }
 }
 
 
