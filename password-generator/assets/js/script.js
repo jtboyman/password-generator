@@ -36,6 +36,63 @@ function generatePassword() {
           window.alert("Please type 'Y' or 'N' to make your selection.");
           return //whatever this function gets named
         }
+
+  //prompt for uppercase
+
+  let promptUppercase = window.prompt("Should password include uppercase characters? Type 'Y' for yes or 'N' for no.");
+
+  if (promptUppercase === "" || promptUppercase === null) {
+    window.alert("Please type 'Y' or 'N' to make your selection.");
+    return //whatever this function gets named
+  }
+    else if (promptUppercase === 'y' || promptUppercase === 'Y') {
+      //move on to numeric prompt, allow uppercase letters;
+    }
+      else if (promptUppercase === 'n' || promptUppercase === 'N') {
+        //move on to numeric prompt, disallow uppercase letters;
+      }
+        else {
+          window.alert("Please type 'Y' or 'N' to make your selection.");
+          return //whatever this function gets named
+        }
+
+  //prompt for numerics
+
+  let promptNumerics = window.prompt("Should password include numbers? Type 'Y' for yes or 'N' for no.");
+
+  if (promptNumerics === "" || promptNumerics === null) {
+    window.alert("Please type 'Y' or 'N' to make your selection.");
+    return //whatever this function gets named
+  }
+    else if (promptNumerics === 'y' || promptNumerics === 'Y') {
+      //move on to specials prompt, allow numbers;
+    }
+      else if (promptNumerics === 'n' || promptNumerics === 'N') {
+        //move on to specials prompt, disallow numbers;
+      }
+        else {
+          window.alert("Please type 'Y' or 'N' to make your selection.");
+          return //whatever this function gets named
+        }
+
+  //prompt for special characters
+
+  let promptSpecials = window.prompt("Should password include special characters? Type 'Y' for yes or 'N' for no.");
+
+  if (promptSpecials === "" || promptSpecials === null) {
+    window.alert("Please type 'Y' or 'N' to make your selection.");
+    return //whatever this function gets named
+  }
+    else if (promptSpecials === 'y' || promptSpecials === 'Y') {
+      //create password, allow special characters;
+    }
+      else if (promptSpecials === 'n' || promptSpecials === 'N') {
+        //create password, disallow special characters;
+      }
+        else {
+          window.alert("Please type 'Y' or 'N' to make your selection.");
+          return //whatever this function gets named
+        }
 }
 
 
