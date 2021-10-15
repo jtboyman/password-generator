@@ -1,20 +1,24 @@
 // Assignment code here
 
 function generatePassword() {
+
+    //Prompt for password length and only accept integers 8-128, otherwise prompt again
   let promptLength = window.prompt("Please select the number of characters to determine your password's length. You can type any number 8 through 128 (Decimals will be rounded to the nearest integer).");
-  //Prompt for password length and only accept integers 8-128 
+//turn this into a FUNCTION
   if (promptLength === "" || promptLength === null) {
     window.alert("Please type a number 8 through 128.");
     return generatePassword();
   }
 
     else if (promptLength >= 8 && promptLength <= 128) {
-      console.log(Math.round(promptLength));
+      Math.round(promptLength);
     } 
       else {
         window.alert("Please type a number 8 through 128.");
         return generatePassword();
       }
+
+  //Prompt to ask if password should include lowercase letters
 }
 
 
