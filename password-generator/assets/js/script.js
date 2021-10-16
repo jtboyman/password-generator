@@ -150,12 +150,19 @@ let generatePassword = function() {
   confirmNumerics();
   confirmSpecials();
 
-  let finalPassword =[];
+  let finalPassword = [];
   for (let i = 0; i < passwordLength; i++) {
     finalPassword.push(randomCharacter());
 
   }
-  return finalPassword.join("");
+debugger;
+  if (userPasswordMaker.length === 0) {
+    alert("Please choose at least one type of character to include.");
+    generatePassword();
+  }
+      else 
+
+        return finalPassword.join("");
 }
 
 
