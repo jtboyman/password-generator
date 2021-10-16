@@ -137,7 +137,24 @@ let confirmSpecials = function() {
             return confirmSpecials();
           }
 }
+//gen random value
+let randomCharacter = function() {
+  let value = userPasswordMaker[Math.floor(Math.random() * userPasswordMaker.length)];
+  return value;
+};
 
+let generatePassword = function() {
+
+  getLength();
+  confirmLowercase();
+  confirmUppercase();
+  confirmNumerics();
+  confirmSpecials();
+
+  for (let i = 0; i <= passwordLength; i++) {
+    randomCharacter();
+  }
+}
 
 
 // Get references to the #generate element
