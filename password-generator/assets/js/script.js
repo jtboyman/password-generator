@@ -155,7 +155,6 @@ let generatePassword = function() {
     finalPassword.push(randomCharacter());
 
   }
-debugger;
   if (userPasswordMaker.length === 0) {
     alert("Please choose at least one type of character to include.");
     generatePassword();
