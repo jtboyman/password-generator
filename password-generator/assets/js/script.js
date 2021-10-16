@@ -144,7 +144,6 @@ let randomCharacter = function() {
 };
 
 let generatePassword = function() {
-
   getLength();
   confirmLowercase();
   confirmUppercase();
@@ -152,7 +151,7 @@ let generatePassword = function() {
   confirmSpecials();
 
   let finalPassword =[];
-  for (let i = 0; i <= passwordLength; i++) {
+  for (let i = 0; i < passwordLength; i++) {
     finalPassword.push(randomCharacter());
 
   }
