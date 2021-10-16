@@ -151,9 +151,12 @@ let generatePassword = function() {
   confirmNumerics();
   confirmSpecials();
 
+  let finalPassword =[];
   for (let i = 0; i <= passwordLength; i++) {
-    randomCharacter();
+    finalPassword.push(randomCharacter());
+
   }
+  return finalPassword.join("");
 }
 
 
