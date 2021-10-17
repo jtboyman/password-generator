@@ -4,6 +4,8 @@
 
 Password Generator accepts four different character types and randomly generates a secure password using the selected character types.
 
+https://jtboyman.github.io/password-generator/
+
 ## Preview
 
 ![screenshot of the application](./assets/images/application-screengrab.png)
