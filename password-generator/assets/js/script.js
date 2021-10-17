@@ -51,7 +51,7 @@ let confirmLowercase = function () {
         }
 }
 
-let confirmUppercase = function() {
+let confirmUppercase = function() {//uppercase prompt
 
   let promptUppercase = prompt("Should password include uppercase characters? Type 'Y' for yes or 'N' for no.");
 
@@ -78,7 +78,7 @@ let confirmUppercase = function() {
         }
 }
 
-let confirmNumerics = function() {
+let confirmNumerics = function() {//numbers prompt
 
     //prompt for numerics
 
@@ -107,7 +107,7 @@ let confirmNumerics = function() {
           }
 }
 
-let confirmSpecials = function() {
+let confirmSpecials = function() {//special chars prompt
 
     //prompt for special characters
 
